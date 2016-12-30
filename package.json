@@ -1,0 +1,34 @@
+{
+  "name": "ts-probabilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidimayra/ts-probabilities.git"
+  },
+  "keywords": [
+    "stats",
+    "statistics",
+    "probabilities"
+  ],
+  "author": "Lidiane Taquehara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lidimayra/ts-probabilities/issues"
+  },
+  "homepage": "https://github.com/lidimayra/ts-probabilities#readme",
+
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.3",
+    "gulp-plumber": "^0.6.6",
+    "gulp-typescript": "^2.4.0",
+    "gulp-uglify": "^1.1.0"
+  }
+}
