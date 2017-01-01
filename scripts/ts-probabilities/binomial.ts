@@ -7,8 +7,8 @@ export class Binomial {
         this._mean = mean;
     }
 
-    get numberOfTrials(): number {
-        return this.numberOfTrials;
+    geNumberOfTrials(): number {
+        return this._numberOfTrials;
     }
 
     probabilityOfSuccess(): number {
@@ -34,7 +34,7 @@ export class Binomial {
     }
 
     probabilityOf(x: number): number {
-        var n = this.numberOfTrials;
+        var n = this._numberOfTrials;
         var p = this.probabilityOfSuccess();
         var q = this.probabilityOfFailure();
 

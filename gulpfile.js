@@ -27,7 +27,7 @@ gulp.task('typescript', function () {
                             noExternalResolve: true
                         }));
 
-    tsResult.dts.pipe(gulp.dest(compilePath + '/tsdefinitions'));
+    tsResult.dts.pipe(gulp.dest('scripts/typings'));
 
     return tsResult.js.pipe(gulp.dest(compilePath + '/javascript'));
 });

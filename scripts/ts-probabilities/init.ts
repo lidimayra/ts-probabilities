@@ -1,6 +1,6 @@
-import distribution = require('./distribution');
+import { Binomial } from './binomial';
 
 (() => {
-    var dist = new distribution.Binomial(5, 3);
-    console.log(dist.variance());
+    var dist = new Binomial(5, 3);
+    console.log(dist.standardDeviation());
 })();
