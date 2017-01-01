@@ -1,3 +1,5 @@
+import { factorial, combination } from '../precalculus';
+
 export class Binomial {
     private _numberOfTrials: number;
     private _mean: number;
@@ -7,7 +9,7 @@ export class Binomial {
         this._mean = mean;
     }
 
-    NumberOfTrials(): number {
+    numberOfTrials(): number {
         return this._numberOfTrials;
     }
 
@@ -38,20 +40,6 @@ export class Binomial {
         var p = this.probabilityOfSuccess();
         var q = this.probabilityOfFailure();
 
-        return this._combination(n, x) * Math.pow(p, x) * Math.pow(q, n - x);
+        return combination(n, x) * Math.pow(p, x) * Math.pow(q, n - x);
     }
-
-    private _combination(a: number, b: number): number {
-        return this._factorial(a) / this._factorial(a-b) * this._factorial(b);
-    }
-
-    private _factorial(x: number): number {
-        var n: number = 1;
-        for (var i = 2; i <= x; i++) {
-            n *= i;
-        }
-
-        return n;
-    }
-
 }

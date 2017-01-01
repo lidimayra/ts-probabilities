@@ -1,4 +1,4 @@
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", "../precalculus"], function (require, exports, precalculus_1) {
     "use strict";
     var Poisson = (function () {
         function Poisson(mean) {
@@ -11,14 +11,7 @@ define(["require", "exports"], function (require, exports) {
             return this.standardDeviation() / this._mean;
         };
         Poisson.prototype.probabilityOf = function (x) {
-            return Math.pow(this._mean, x) * Math.pow(Math.E, this._mean * (-1)) / this._factorial(x);
-        };
-        Poisson.prototype._factorial = function (x) {
-            var n = 1;
-            for (var i = 2; i <= x; i++) {
-                n *= i;
-            }
-            return n;
+            return Math.pow(this._mean, x) * Math.pow(Math.E, this._mean * (-1)) / precalculus_1.factorial(x);
         };
         return Poisson;
     }());

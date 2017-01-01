@@ -1,11 +1,11 @@
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", "../precalculus"], function (require, exports, precalculus_1) {
     "use strict";
     var Binomial = (function () {
         function Binomial(numberOfTrials, mean) {
             this._numberOfTrials = numberOfTrials;
             this._mean = mean;
         }
-        Binomial.prototype.NumberOfTrials = function () {
+        Binomial.prototype.numberOfTrials = function () {
             return this._numberOfTrials;
         };
         Binomial.prototype.probabilityOfSuccess = function () {
@@ -29,17 +29,7 @@ define(["require", "exports"], function (require, exports) {
             var n = this._numberOfTrials;
             var p = this.probabilityOfSuccess();
             var q = this.probabilityOfFailure();
-            return this._combination(n, x) * Math.pow(p, x) * Math.pow(q, n - x);
-        };
-        Binomial.prototype._combination = function (a, b) {
-            return this._factorial(a) / this._factorial(a - b) * this._factorial(b);
-        };
-        Binomial.prototype._factorial = function (x) {
-            var n = 1;
-            for (var i = 2; i <= x; i++) {
-                n *= i;
-            }
-            return n;
+            return precalculus_1.combination(n, x) * Math.pow(p, x) * Math.pow(q, n - x);
         };
         return Binomial;
     }());

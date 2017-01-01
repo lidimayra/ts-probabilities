@@ -1,3 +1,5 @@
+import { factorial } from '../precalculus';
+
 export class Poisson {
     private _mean: number;
 
@@ -14,15 +16,6 @@ export class Poisson {
     }
 
     probabilityOf(x: number): number {
-        return Math.pow(this._mean, x) * Math.pow(Math.E, this._mean*(-1)) / this._factorial(x);
-    }
-
-    private _factorial(x: number): number {
-        var n: number = 1;
-        for (var i = 2; i <= x; i++) {
-            n *= i;
-        }
-
-        return n;
+        return Math.pow(this._mean, x) * Math.pow(Math.E, this._mean*(-1)) / factorial(x);
     }
 }
