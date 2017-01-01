@@ -1,4 +1,4 @@
-import { Binomial } from './binomial';
+import { Binomial } from './distributions/binomial';
 
 (() => {
     var dist = new Binomial(5, 3);

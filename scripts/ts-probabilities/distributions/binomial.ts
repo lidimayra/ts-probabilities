@@ -7,7 +7,7 @@ export class Binomial {
         this._mean = mean;
     }
 
-    geNumberOfTrials(): number {
+    NumberOfTrials(): number {
         return this._numberOfTrials;
     }
 

@@ -5,7 +5,7 @@ define(["require", "exports"], function (require, exports) {
             this._numberOfTrials = numberOfTrials;
             this._mean = mean;
         }
-        Binomial.prototype.geNumberOfTrials = function () {
+        Binomial.prototype.NumberOfTrials = function () {
             return this._numberOfTrials;
         };
         Binomial.prototype.probabilityOfSuccess = function () {
