@@ -22,7 +22,7 @@ Clone the project
 git clone git@github.com:lidimayra/ts-probabilities.git
 ```
 
-Create your HTML file in the root directory and include a call to the script
+Create your HTML file in the root directory and include a call to the lib
 
 ```HTML
 <script data-main="lib/main" src="require.js"></script>
