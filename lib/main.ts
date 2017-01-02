@@ -1,7 +1,7 @@
 /// <reference path="../typings/require.d.ts"/>
 
 require.config({
-    baseUrl: 'scripts/ts-probabilities'
+    baseUrl: 'lib'
 });
 
 requirejs(['init']);
