@@ -15,14 +15,20 @@ distribution.probabilityOf(4);
 distribution.standardDeviation();
 ```
 
+## Prerequisite
+Typescript 2.1.4 or higher. You can install it via npm:
+```
+npm install -g typescript
+```
+
 ## Usage
-Clone the project
+Clone the project:
 
 ```
 git clone git@github.com:lidimayra/ts-probabilities.git
 ```
 
-Create your HTML file in the root directory and include a call to the lib
+Create your HTML file in the root directory and include a call to the lib:
 
 ```HTML
 <script data-main="lib/main" src="require.js"></script>
@@ -31,7 +37,7 @@ Create your HTML file in the root directory and include a call to the lib
 To work with the library, open `lib/init.ts` and follow the instructions
 described in the file.
 
-Compile it to a .js file
+Compile it to a .js file:
 ```
 tsc --module amd init.ts
 ```
