@@ -31,9 +31,6 @@ Create your HTML file in the root directory and include a call to the lib
 To work with the library, open `lib/init.ts` and follow the instructions
 described in the file.
 
-Compile it to a .js file
-```
-tsc --module amd init.ts
-```
+Compile `.ts` files to `.js` by running `tsc` command on terminal.
 
 Done! :)
