@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "amd",
+        "moduleResolution": "classic",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false
+    },
+    "include": [
+      "lib/*.ts",
+      "lib/**/*.ts"
+    ]
+}
