@@ -5,8 +5,8 @@ distributions.
 
 ## Code Example
 ```typescript
-// a binomial distribution with n=5 and μ=3
-var distribution = new Binomial(5, 3);
+// a binomial distribution with n=5 and p=0.6
+var distribution = new Binomial(5, 0.6);
 
 // calculates probability of 4 value
 distribution.probabilityOf(4);
